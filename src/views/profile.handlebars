@@ -1,0 +1,19 @@
+<div>
+    <h1>Welcome, {{user.name}}</h1>
+    <p>Role: {{user.role}}</p>
+    <img src={{user.avatar}} />
+    <br />
+    {{#if events}}
+        <h4>Your history:</h4>
+        <ul>
+            {{#each events}}
+                <li>
+                    <div>
+                        <h5>{{this.event}}</h5>
+                        <p>{{this.description}}</p>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</div>

@@ -1,0 +1,23 @@
+<section class="d-flex flex-column align-items-center my-5">
+    <h1>Product creator</h1>
+    <form class="w-50" id="productForm">
+        <label class="form-label pt-3">Title</label>
+        <input class="form-control" name="title" />
+        <label class="form-label pt-3">Description</label>
+        <textarea name="description" class="form-control"></textarea>
+        <label class="form-label pt-3">Price</label>
+        <input class="form-control" name="price" type="number" />
+        <label class="form-label pt-3">Stock</label>
+        <input class="form-control" name="stock" type="number" />
+        <label class="form-label pt-3">Code</label>
+        <input class="form-control" name="code" />
+        <label class="form-label pt-3">Image</label>
+        <input class="form-control" type="file" name="image" />
+        <input
+            type="submit"
+            class="btn btn-primary w-100 mt-3"
+            value="CREATE"
+        />
+    </form>
+</section>
+<script src="/js/productCreator.js"></script>
